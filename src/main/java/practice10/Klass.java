@@ -33,6 +33,10 @@ public class Klass {
         return number == klass.number;
     }
 
+    public boolean isIn(Student student) {
+        return this.equals(student.getKlass());
+    }
+
     @Override
     public int hashCode() {
         return Objects.hash(number);

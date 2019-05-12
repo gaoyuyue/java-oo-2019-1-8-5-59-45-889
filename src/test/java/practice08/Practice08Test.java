@@ -1,25 +1,25 @@
-//package practice08;
-//
-//import org.junit.Before;
-//import org.junit.Test;
-//
-//import static org.fest.assertions.api.Assertions.assertThat;
-//
-//public class Practice08Test {
-//    private Klass klass;
-//
-//    @Before
-//    public void setup() {
-//        klass = new Klass(2);
-//    }
-//
-//    @Test
-//    public void should_person_have_id_name_and_age() throws Exception {
-//        Person person = new Person(1, "Tom", 21);
-//        assertThat(person.getName()).isEqualTo("Tom");
-//        assertThat(person.getAge()).isEqualTo(21);
-//    }
-//
+package practice08;
+
+import org.junit.Before;
+import org.junit.Test;
+
+import static org.fest.assertions.api.Assertions.assertThat;
+
+public class Practice08Test {
+    private Klass klass;
+
+    @Before
+    public void setup() {
+        klass = new Klass(2);
+    }
+
+    @Test
+    public void should_person_have_id_name_and_age() throws Exception {
+        Person person = new Person(1, "Tom", 21);
+        assertThat(person.getName()).isEqualTo("Tom");
+        assertThat(person.getAge()).isEqualTo(21);
+    }
+
 //    @Test
 //    public void should_person_with_same_id_be_same_one() throws Exception {
 //        Person person1 = new Person(1, "Tom", 21);
@@ -105,4 +105,4 @@
 //        Student jerry = new Student(1, "Jerry", 8, new Klass(2));
 //        assertThat(tom.introduceWith(jerry)).isEqualTo("My name is Tom. I am 21 years old. I am a Teacher. I don't teach Jerry.");
 //    }
-//}
+}

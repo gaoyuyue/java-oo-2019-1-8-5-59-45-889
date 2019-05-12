@@ -133,32 +133,32 @@ public class Practice10Test {
         assertThat(tom.isTeaching(jerry)).isTrue();
     }
 
-//    @Test
-//    public void should_teacher_isTeaching_return_false_when_the_student_is_not_in_all_the_classes_the_teacher_teaches() throws Exception {
-//        LinkedList<practice10.Klass> linkedList = new LinkedList<Klass>();
-//        linkedList.add(klass2);
-//        Teacher tom = new Teacher(1, "Tom", 21, linkedList);
-//        Student jerry = new Student(1, "Jerry", 8, new Klass(3));
-//
-//        assertThat(tom.isTeaching(jerry)).isFalse();
-//    }
-//
-//    @Test
-//    public void should_teacher_introduce_a_student_it_teaches() throws Exception {
-//        LinkedList<practice10.Klass> linkedList = new LinkedList<Klass>();
-//        linkedList.add(klass2);
-//        Teacher tom = new Teacher(1, "Tom", 21, linkedList);
-//        Student jerry = new Student(1, "Jerry", 8, klass2);
-//        assertThat(tom.introduceWith(jerry)).isEqualTo("My name is Tom. I am 21 years old. I am a Teacher. I teach Jerry.");
-//    }
-//
-//    @Test
-//    public void should_teacher_introduce_a_student_it_does_not_teach() throws Exception {
-//        LinkedList<practice10.Klass> linkedList = new LinkedList<Klass>();
-//        Klass klass1 = new Klass(1);
-//        linkedList.add(klass1);
-//        Teacher tom = new Teacher(1, "Tom", 21, linkedList);
-//        Student jerry = new Student(1, "Jerry", 8, new Klass(2));
-//        assertThat(tom.introduceWith(jerry)).isEqualTo("My name is Tom. I am 21 years old. I am a Teacher. I don't teach Jerry.");
-//    }
+    @Test
+    public void should_teacher_isTeaching_return_false_when_the_student_is_not_in_all_the_classes_the_teacher_teaches() throws Exception {
+        LinkedList<practice10.Klass> linkedList = new LinkedList<Klass>();
+        linkedList.add(klass2);
+        Teacher tom = new Teacher(1, "Tom", 21, linkedList);
+        Student jerry = new Student(1, "Jerry", 8, new Klass(3));
+
+        assertThat(tom.isTeaching(jerry)).isFalse();
+    }
+
+    @Test
+    public void should_teacher_introduce_a_student_it_teaches() throws Exception {
+        LinkedList<practice10.Klass> linkedList = new LinkedList<Klass>();
+        linkedList.add(klass2);
+        Teacher tom = new Teacher(1, "Tom", 21, linkedList);
+        Student jerry = new Student(1, "Jerry", 8, klass2);
+        assertThat(tom.introduceWith(jerry)).isEqualTo("My name is Tom. I am 21 years old. I am a Teacher. I teach Jerry.");
+    }
+
+    @Test
+    public void should_teacher_introduce_a_student_it_does_not_teach() throws Exception {
+        LinkedList<practice10.Klass> linkedList = new LinkedList<Klass>();
+        Klass klass1 = new Klass(1);
+        linkedList.add(klass1);
+        Teacher tom = new Teacher(1, "Tom", 21, linkedList);
+        Student jerry = new Student(1, "Jerry", 8, new Klass(2));
+        assertThat(tom.introduceWith(jerry)).isEqualTo("My name is Tom. I am 21 years old. I am a Teacher. I don't teach Jerry.");
+    }
 }

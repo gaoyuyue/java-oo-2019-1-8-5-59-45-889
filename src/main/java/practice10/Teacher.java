@@ -34,10 +34,10 @@ public class Teacher extends Person {
         return classes.stream().anyMatch(c -> c.equals(student.getKlass()));
     }
 
-//    public String introduceWith(Student student) {
-//        if (klass.equals(student.getKlass())) {
-//            return super.introduce() + " I am a Teacher. I teach " + student.getName() + ".";
-//        }
-//        return super.introduce() + " I am a Teacher. I don't teach " + student.getName() + ".";
-//    }
+    public String introduceWith(Student student) {
+        if (classes.contains(student.getKlass())) {
+            return super.introduce() + " I am a Teacher. I teach " + student.getName() + ".";
+        }
+        return super.introduce() + " I am a Teacher. I don't teach " + student.getName() + ".";
+    }
 }

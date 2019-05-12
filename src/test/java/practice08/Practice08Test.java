@@ -27,13 +27,13 @@ public class Practice08Test {
         assertThat(person1).isEqualTo(person2);
     }
 
-//    @Test
-//    public void should_person_have_an_introduce_method_which_introduce_person_with_name_and_age() throws Exception {
-//        Person tom = new Person(1, "Tom", 21);
-//        String introduce = tom.introduce();
-//        assertThat(introduce).isEqualTo("My name is Tom. I am 21 years old.");
-//    }
-//
+    @Test
+    public void should_person_have_an_introduce_method_which_introduce_person_with_name_and_age() throws Exception {
+        Person tom = new Person(1, "Tom", 21);
+        String introduce = tom.introduce();
+        assertThat(introduce).isEqualTo("My name is Tom. I am 21 years old.");
+    }
+
 //    @Test
 //    public void should_class_have_a_number() throws Exception {
 //        assertThat(klass.getNumber()).isEqualTo(2);

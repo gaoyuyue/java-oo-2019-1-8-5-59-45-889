@@ -37,14 +37,14 @@ public class Practice07Test {
         assertThat(klass.getDisplayName()).isEqualTo("Class 2");
     }
 
-//    @Test
-//    public void should_student_have_name_age_and_class_number() throws Exception {
-//        Student tom = new Student("Tom", 21, klass);
-//        assertThat(tom.getName()).isEqualTo("Tom");
-//        assertThat(tom.getAge()).isEqualTo(21);
-//        assertThat(tom.getKlass()).isEqualTo(klass);
-//    }
-//
+    @Test
+    public void should_student_have_name_age_and_class_number() throws Exception {
+        Student tom = new Student("Tom", 21, klass);
+        assertThat(tom.getName()).isEqualTo("Tom");
+        assertThat(tom.getAge()).isEqualTo(21);
+        assertThat(tom.getKlass()).isEqualTo(klass);
+    }
+
 //    @Test
 //    public void should_student_introduce_with_class() throws Exception {
 //        Student tom = new Student("Tom", 21, klass);

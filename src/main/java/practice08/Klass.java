@@ -4,6 +4,11 @@ import java.util.Objects;
 
 public class Klass {
     private int number;
+    private Student leader;
+
+    public Student getLeader() {
+        return leader;
+    }
 
     public Klass(int number) {
         this.number = number;
@@ -28,5 +33,9 @@ public class Klass {
     @Override
     public int hashCode() {
         return Objects.hash(number);
+    }
+
+    public void assignLeader(Student leader) {
+        this.leader = leader;
     }
 }

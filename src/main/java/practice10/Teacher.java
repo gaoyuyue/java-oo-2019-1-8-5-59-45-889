@@ -30,6 +30,10 @@ public class Teacher extends Person {
         return "Class " + classes.stream().map(c -> String.valueOf(c.getNumber())).collect(Collectors.joining(", "));
     }
 
+    public boolean isTeaching(Student student) {
+        return classes.stream().anyMatch(c -> c.equals(student.getKlass()));
+    }
+
 //    public String introduceWith(Student student) {
 //        if (klass.equals(student.getKlass())) {
 //            return super.introduce() + " I am a Teacher. I teach " + student.getName() + ".";

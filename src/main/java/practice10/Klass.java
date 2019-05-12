@@ -9,6 +9,10 @@ public class Klass {
     private Student leader;
     private List<Student> students = new ArrayList<>();
 
+    public List<Student> getStudents() {
+        return students;
+    }
+
     public Student getLeader() {
         return leader;
     }

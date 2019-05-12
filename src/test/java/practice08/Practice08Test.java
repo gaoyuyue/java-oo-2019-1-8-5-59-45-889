@@ -34,16 +34,16 @@ public class Practice08Test {
         assertThat(introduce).isEqualTo("My name is Tom. I am 21 years old.");
     }
 
-//    @Test
-//    public void should_class_have_a_number() throws Exception {
-//        assertThat(klass.getNumber()).isEqualTo(2);
-//    }
-//
-//    @Test
-//    public void should_class_get_display_name() throws Exception {
-//        assertThat(klass.getDisplayName()).isEqualTo("Class 2");
-//    }
-//
+    @Test
+    public void should_class_have_a_number() throws Exception {
+        assertThat(klass.getNumber()).isEqualTo(2);
+    }
+
+    @Test
+    public void should_class_get_display_name() throws Exception {
+        assertThat(klass.getDisplayName()).isEqualTo("Class 2");
+    }
+
 //    @Test
 //    public void should_class_assign_a_leader() throws Exception {
 //        Student jerry = new Student(1, "Jerry", 8, klass);

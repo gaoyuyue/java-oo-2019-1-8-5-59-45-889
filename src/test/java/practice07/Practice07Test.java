@@ -45,12 +45,12 @@ public class Practice07Test {
         assertThat(tom.getKlass()).isEqualTo(klass);
     }
 
-//    @Test
-//    public void should_student_introduce_with_class() throws Exception {
-//        Student tom = new Student("Tom", 21, klass);
-//        assertThat(tom.introduce()).isEqualTo("My name is Tom. I am 21 years old. I am a Student. I am at Class 2.");
-//    }
-//
+    @Test
+    public void should_student_introduce_with_class() throws Exception {
+        Student tom = new Student("Tom", 21, klass);
+        assertThat(tom.introduce()).isEqualTo("My name is Tom. I am 21 years old. I am a Student. I am at Class 2.");
+    }
+
 //    @Test
 //    public void should_teacher_have_name_and_age_and_class() throws Exception {
 //        Teacher tom = new Teacher("Tom", 21, klass);
